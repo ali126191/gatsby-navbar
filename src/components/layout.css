@@ -185,7 +185,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em roboto, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -200,7 +200,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: roboto, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -615,8 +615,69 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+
+footer {
+  display: none;
+}
+@media only screen and (max-width: 750px) {
+
+  * {
+    padding:0;
+    margin:0;    
+    font-family: 'Roboto'
+
+  }
   html {
     font-size: 100%;
+    font-family: 'Roboto'
   }
+
+
+  .footer { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+    margin-top: 1px solid #ccc;
+    width:100%;
+    border-top: 1px solid rgb(246, 237, 250);
+    background:#fff;
+    max-height: 90px;
+  }
+
+  .row {
+    padding:8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .col {
+    text-decoration: none;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    font-style: normal;
+    line-height: 1;
+    color:#8c65b3;
+    margin-bottom: none;
+    display: inline;
+    font-weight:400;
+    font-family: 'Roboto'
+  }
+  
+  .icon {
+    color:#8c65b3;
+    margin-bottom: 5px
+  }
+
 }
